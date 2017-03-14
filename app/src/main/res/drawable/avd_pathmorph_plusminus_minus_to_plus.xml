@@ -3,21 +3,20 @@
     xmlns:aapt="http://schemas.android.com/aapt"
     android:drawable="@drawable/vd_pathmorph_plusminus_minus">
 
-    <target android:name="pathGroup"
-        android:animation="minusPathgrp">
-        <aapt:attr android:name="android:animation">
+    <target android:name="pathGroup">
+
+
             <objectAnimator
                 android:duration="300"
                 android:interpolator="@android:interpolator/fast_out_slow_in"
                 android:propertyName="rotation"
                 android:valueFrom="-180"
                 android:valueTo="0"/>
-        </aapt:attr>
-    </target>
+        </target>
 
-    <target android:name="minusPath"
-        android:animation="minus">
-        <aapt:attr android:name="android:animation">
+
+    <target android:name="minusPath">
+
             <objectAnimator
                 android:duration="250"
                 android:interpolator="@android:interpolator/fast_out_slow_in"
@@ -25,7 +24,6 @@
                 android:valueFrom="@string/pathmorph_plusminus_minus_path"
                 android:valueTo="@string/pathmorph_plusminus_plus_path"
                 android:valueType="pathType"/>
-        </aapt:attr>
-    </target>
+        </target>
 
 </animated-vector>
